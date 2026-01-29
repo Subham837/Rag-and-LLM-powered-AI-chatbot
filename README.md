@@ -1,120 +1,138 @@
-🤖 RAG & LLM Powered AI Tutor
+<h1 align="center">AI Tutor – RAG & LLM Powered Chatbot</h1>
 
-Intelligent Document-Aware Chatbot
+<p align="center">
+  A document-aware AI tutor built using <b>Retrieval-Augmented Generation (RAG)</b> and
+  <b>Large Language Models (LLMs)</b> for accurate, context-grounded question answering.
+</p>
 
-<p align="center"> <img src="https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge"/> <img src="https://img.shields.io/badge/RAG-Enabled-success?style=for-the-badge"/> <img src="https://img.shields.io/badge/LLM-Powered-purple?style=for-the-badge"/> <img src="https://img.shields.io/badge/Multi--Tool-Supported-orange?style=for-the-badge"/> </p> <p align="center"> <strong>An AI Tutor powered by Retrieval-Augmented Generation (RAG), Large Language Models (LLMs), and multi-tool reasoning to answer questions directly from uploaded PDFs.</strong> </p>
-🌟 Project Overview
+<hr/>
 
-This project is a document-aware AI Tutor that allows users to upload PDFs and ask natural language questions.
-The system retrieves relevant chunks from the document and uses an LLM to generate accurate, grounded, and context-aware answers.
+<h2>📌 Project Description</h2>
 
-Unlike traditional chatbots, this system:
+<p>
+This project implements an <b>AI Tutor</b> that allows users to upload PDF documents and ask
+natural language questions. Instead of relying solely on an LLM’s internal knowledge,
+the system retrieves relevant information from the document and generates answers
+strictly grounded in that content.
+</p>
 
-Reads your documents
+<p>
+The architecture significantly reduces hallucinations and makes the chatbot suitable
+for educational, research, and enterprise document-based use cases.
+</p>
 
-Understands context
+<hr/>
 
-Uses tools when needed
+<h2>✨ Key Capabilities</h2>
 
-Avoids hallucinations
+<ul>
+  <li>PDF-based question answering</li>
+  <li>Retrieval-Augmented Generation (RAG) pipeline</li>
+  <li>LLM-powered reasoning and response generation</li>
+  <li>Multi-tool extensible design</li>
+  <li>Thread-based conversational sessions</li>
+  <li>Clean and interactive Streamlit UI</li>
+</ul>
 
-🖼️ Application Screenshot
-<p align="center"> <img src="assets/app_screenshot.png" alt="AI Tutor RAG Chatbot Screenshot" width="900"/> </p>
+<hr/>
 
-📌 The screenshot shows real-time PDF-based question answering using RAG, thread-based chat history, and an interactive Streamlit UI.
+<h2>🧠 System Workflow</h2>
 
-✨ Key Features
+<pre>
+PDF Upload
+   → Document Chunking
+   → Embeddings Generation
+   → Vector Retrieval (RAG)
+   → LLM Reasoning
+   → Context-Aware Answer
+</pre>
 
-📄 PDF-Based Question Answering
-Ask questions directly from uploaded documents.
+<hr/>
 
-🔍 RAG Retrieval Pipeline
-Retrieves the most relevant chunks before generating responses.
+<h2>🛠️ Technology Stack</h2>
 
-🧠 LLM-Powered AI Tutor
-Explains concepts, definitions, and exercises clearly.
+<table>
+  <tr>
+    <th align="left">Layer</th>
+    <th align="left">Technology</th>
+  </tr>
+  <tr>
+    <td>Language</td>
+    <td>Python</td>
+  </tr>
+  <tr>
+    <td>Frontend</td>
+    <td>Streamlit</td>
+  </tr>
+  <tr>
+    <td>LLMs</td>
+    <td>OpenAI / Gemini / Hugging Face (pluggable)</td>
+  </tr>
+  <tr>
+    <td>Retrieval</td>
+    <td>Embeddings + Vector Store</td>
+  </tr>
+  <tr>
+    <td>Architecture</td>
+    <td>Modular & Scalable</td>
+  </tr>
+</table>
 
-🛠️ Multi-Tool Support
-Uses retrieval, reasoning, and extensible tools dynamically.
+<hr/>
 
-🧵 Thread-Based Conversations
-Maintains chat sessions with unique thread IDs.
+<h2>📂 Project Structure</h2>
 
-🎨 Clean Streamlit UI
-Simple, modern, and user-friendly interface.
-
-🧠 How It Works
-User Uploads PDF
-       ↓
-Document Chunking & Embeddings
-       ↓
-Vector Retrieval (RAG)
-       ↓
-LLM + Tool Reasoning
-       ↓
-Accurate Answer from Document
-
-🛠️ Tech Stack
-Layer	Technology
-Language	Python 🐍
-UI	Streamlit
-LLM	OpenAI / Gemini / Hugging Face
-Retrieval	Embeddings + Vector Store
-Tools	Search, PDF Retrieval
-Backend	Modular Python Architecture
-📂 Project Structure
+<pre>
 ├── backend/
+│   ├── ingest_pdf.py
 │   ├── retriever.py
 │   ├── llm_handler.py
-│   ├── tools.py
-│   └── ingest_pdf.py
+│   └── tools.py
 ├── frontend/
 │   └── app.py
 ├── data/
-├── assets/
-│   └── app_screenshot.png
 ├── requirements.txt
 └── README.md
+</pre>
 
-🚀 Getting Started
+<hr/>
+
+<h2>🚀 Running the Application</h2>
+
+<pre>
 git clone https://github.com/Subham837/Rag-and-LLM-powered-AI-chatbot.git
 cd Rag-and-LLM-powered-AI-chatbot
 
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+source venv/bin/activate   # Windows: venv\Scripts\activate
 
 pip install -r requirements.txt
 streamlit run app.py
+</pre>
 
-🎯 Use Cases
+<hr/>
 
-📚 AI Tutor for students
+<h2>🎯 Use Cases</h2>
 
-📄 PDF-based question answering
+<ul>
+  <li>AI-powered tutoring systems</li>
+  <li>PDF and document-based assistants</li>
+  <li>Enterprise knowledge-base chatbots</li>
+  <li>Academic and research RAG experiments</li>
+</ul>
 
-🏢 Enterprise document assistants
+<hr/>
 
-🔬 Research & academic RAG systems
+<h2>👤 Author</h2>
 
-🔮 Future Enhancements
+<p>
+<b>Subham Pradhan</b><br/>
+Machine Learning & AI Enthusiast<br/>
+GitHub: <a href="https://github.com/Subham837">https://github.com/Subham837</a>
+</p>
 
-Agentic workflows (LangGraph / LangChain)
+<hr/>
 
-Conversation memory
-
-FastAPI backend
-
-Cloud deployment (HF Spaces)
-
-Authentication & roles
-
-👨‍💻 Author
-
-Subham Pradhan 🇮🇳
-Machine Learning & AI Enthusiast
-🔗 GitHub: Subham837
-
-⭐ Support
-
-If you like this project, star ⭐ the repository to support the work!
-
+<p align="center">
+⭐ If you find this project useful, consider starring the repository.
+</p>
