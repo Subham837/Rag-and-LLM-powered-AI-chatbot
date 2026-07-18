@@ -1,4 +1,4 @@
-<h1 align="center">AI Tutor – RAG & LLM Powered Chatbot</h1>.....hhjssmmmnn
+<h1 align="center">AI Tutor – RAG & LLM Powered Chatbot</h1>.....hhjssmmmnnmn
 
 <p align="center">
   A document-aware AI tutor built using <b>Retrieval-Augmented Generation (RAG)</b> and
